@@ -4,11 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base{
-    public static WebDriver driver;
+    public  WebDriver driver;
 
-    public static WebDriver driver() {
-        System.setProperty("web.driver.chrome",System.getProperty("user.dir")+"//src//test//resources//Driver");
-        driver=new ChromeDriver();
+    public  WebDriver driver() {
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Rmnai\\eclipse-workspace\\DemoTest\\src\\test\\resources\\Driver\\chromedriver.exe");
+         WebDriver driver =new ChromeDriver();
         return driver;
 
     }
