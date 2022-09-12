@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85faad7b-d31d-473a-8564-1e5e161681e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exeloffice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Features/Signup.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Features/AddProductToCart.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/Signup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Signup.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Driver/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Driver/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/Rmnai/eclipse-workspace/DemoTest",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"

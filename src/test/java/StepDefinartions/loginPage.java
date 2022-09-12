@@ -2,13 +2,10 @@ package StepDefinartions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.poi.hssf.usermodel.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.time.Duration;
 
 public class loginPage {
@@ -30,16 +27,16 @@ public class loginPage {
         By email = By.cssSelector("input[id='email']");
         By passWord = By.cssSelector("input[type='password']");
         By submit = By.cssSelector("button[name='send']");
-        driver.findElement(email).sendKeys("roni_cost@example.com");
-        driver.findElement(passWord).sendKeys("roni_cost3@example.com");
+        driver.findElement(email).sendKeys("demo@demail.com");
+        driver.findElement(passWord).sendKeys("Charle@234#");
         driver.findElement(submit).click();
 
         System.out.println("Enter UID & PASSWORD");
     }
-//    @Then("Validate the Login Attempt")
-//    public void validate_the_login_attempt() {
-//        System.out.println("Login Sucessfull");
-//    }
+    @Then("Validate the Login Attempt")
+    public void validate_the_login_attempt() {
+        System.out.println("Login Sucessfull");
+    }
 @When("Visit the Signup Page")
 public void visit_the_signup_page() {
     driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
@@ -47,20 +44,20 @@ public void visit_the_signup_page() {
 
 }
     @Then("Fill the Signup Deatial's")
-    public void fill_the_signup_deatials(String dfname,String dlname,String demail,String dpassword) {
+    public void fill_the_signup_deatials() {
         By fname = By.cssSelector("input[id='firstname']");
         By lname = By.cssSelector("input[id='lastname']");
         By email = By.cssSelector("input[id='email_address']");
         By password = By.cssSelector("input[id='password']");
         By passwordconfo = By.cssSelector("input[id='password-confirmation']");
         By submit = By.cssSelector("button[class='action submit primary']");
-        driver.findElement(fname).sendKeys(dfname);
-        driver.findElement(lname).sendKeys(dlname);
-        driver.findElement(email).sendKeys(demail);
-        driver.findElement(password).sendKeys(dpassword);
-        driver.findElement(passwordconfo).sendKeys(dpassword);
+        driver.findElement(fname).sendKeys("Rahul");
+        driver.findElement(lname).sendKeys("dlname");
+        driver.findElement(email).sendKeys("demo@demail.com");
+        driver.findElement(password).sendKeys("Charle@234#");
+        driver.findElement(passwordconfo).sendKeys("Charle@234#");
         driver.findElement(submit).click();
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 
 
