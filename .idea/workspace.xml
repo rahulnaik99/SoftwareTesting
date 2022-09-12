@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85faad7b-d31d-473a-8564-1e5e161681e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Features/AddProductToCart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/LoginPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/PageObjectManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestBase/textContextMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commonMethods/commonMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AddProductToCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/AddProductToCart.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Features/Signup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Signup.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +65,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -113,6 +120,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DemoTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="DemoTest" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Cucumber Java.Feature: Login" />
       <item itemvalue="JUnit.Runner" />
@@ -121,7 +141,6 @@
       <list>
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Feature: Login" />
-        <item itemvalue="Cucumber Java.Feature: test" />
       </list>
     </recent_temporary>
   </component>
