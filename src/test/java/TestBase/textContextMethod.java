@@ -11,6 +11,6 @@ public class textContextMethod {
     public PageObjectManager pageobjectmanager;
     public textContextMethod() {
         testbase = new TestBase();
-        pageobjectmanager = new PageObjectManager(testbase.driver);
+        pageobjectmanager = new PageObjectManager(testbase.WebDriverManager());
     }
 }
