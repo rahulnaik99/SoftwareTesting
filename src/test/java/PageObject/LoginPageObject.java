@@ -12,8 +12,9 @@ public class LoginPageObject {
     By email = By.cssSelector("input[id='email']");
     By passWord = By.cssSelector("input[type='password']");
     By submit = By.cssSelector("button[name='send']");
-
-
+    By SignUp = By.cssSelector("a[href='https://magento.softwaretestingboard.com/customer/account/create/']");
+    By ActionSwitch = By.cssSelector("button[class$='action switch']");
+    By Signout = By.cssSelector("a[href='https://magento.softwaretestingboard.com/customer/account/logout/']");
     By fname = By.cssSelector("input[id='firstname']");
     By lname = By.cssSelector("input[id='lastname']");
     By signupEmail = By.cssSelector("input[id='email_address']");
@@ -33,7 +34,6 @@ public class LoginPageObject {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(signIn).click();
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(email).sendKeys(EmailLog);
         driver.findElement(passWord).sendKeys("Charle@234#");
@@ -45,7 +45,8 @@ public class LoginPageObject {
     }
     @SneakyThrows
     public void signup(String EmailAdd){
-        driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
+        driver.findElement(SignUp).click();
+        Thread.sleep(3000);
         driver.findElement(fname).sendKeys("Rahul");
         driver.findElement(lname).sendKeys("Naik");
         driver.findElement(signupEmail).sendKeys(EmailAdd);
@@ -55,6 +56,7 @@ public class LoginPageObject {
         Thread.sleep(10000);
         String Expected = driver.findElement(SignupSuc).getAttribute("innerHTML");
         Assert.assertEquals(Expected, "Thank you for registering with Fake Online Clothing Store.");
-
+        driver.findElement(ActionSwitch).click();
+        driver.findElement(Signout).click();
     }
 }
