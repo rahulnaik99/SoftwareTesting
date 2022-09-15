@@ -29,4 +29,10 @@ public class loginPage {
         LoginPageObject login  = tcm.pageobjectmanager.getLoginPage();
         login.login(arg0);
     }
+
+    @When("User Login using {string}")
+    public void userLoginUsing(String arg0) {
+        LoginPageObject login  = tcm.pageobjectmanager.getLoginPage();
+        login.login(arg0);
+    }
 }

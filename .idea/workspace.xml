@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85faad7b-d31d-473a-8564-1e5e161681e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Features/Seach and Add product to the Cart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/HomePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/homePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/AddProductToCart.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Features/Login and Signup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Login and Signup.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/PageObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/textContextMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/textContextMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/commonMethods/commonMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/commonMethods/commonMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +84,7 @@
       <recent name="StepDefinations" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Search for the Product">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jre1.8.0_341" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -100,6 +107,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Search for the Product" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Seach and Add product to the Cart.feature" />
+      <option name="GLUE" value="StepDefinartions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="DemoTest" />
+      <option name="NAME_FILTER" value="^Search for the Product$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search for the Product$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search for the Product" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoTest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -113,11 +140,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Scenario: Search for the Product" />
       <item itemvalue="Cucumber Java.Feature: Login" />
       <item itemvalue="JUnit.Runner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Search for the Product" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Feature: Login" />
       </list>
@@ -133,6 +162,17 @@
       <updated>1662878863266</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
