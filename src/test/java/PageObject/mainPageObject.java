@@ -5,9 +5,9 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class HomePageObject {
+public class mainPageObject {
     WebDriver driver;
-    public HomePageObject(WebDriver driver){
+    public mainPageObject(WebDriver driver){
         this.driver=driver;
     }
 
@@ -30,7 +30,7 @@ public class HomePageObject {
     {
         driver.findElement(SearchBox).sendKeys(Keyword);
         Thread.sleep(2000);
-        driver.findElement(searchAction).click();
+        //driver.findElement(searchAction).click();
         Thread.sleep(6000);
         driver.findElement(Product).click();
     }

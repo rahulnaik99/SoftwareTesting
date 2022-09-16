@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 public class PageObjectManager {
     WebDriver driver;
     public LoginPageObject loginpage;
-    public HomePageObject homepageobject;
+    public mainPageObject homepageobject;
+    public CheckOutPage checkoutpage;
     public PageObjectManager(WebDriver driver){
         this.driver = driver;
     }
@@ -15,8 +16,14 @@ public class PageObjectManager {
         loginpage = new LoginPageObject(driver);
         return loginpage;
     }
-    public HomePageObject getHomePage(){
-        homepageobject = new HomePageObject(driver);
+    public mainPageObject getHomePage(){
+        homepageobject = new mainPageObject(driver);
         return homepageobject;
+    }
+    public CheckOutPage getCheckoutPage(){
+        checkoutpage = new CheckOutPage(driver);
+        return checkoutpage;
+
+
     }
 }
