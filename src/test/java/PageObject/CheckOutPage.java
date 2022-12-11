@@ -50,6 +50,9 @@ public class CheckOutPage {
         driver.findElement(checkoutSubmit).click();
         Thread.sleep(10000);
         driver.findElement(placeOrder).click();
+        {
+
+        }
 
 
 
