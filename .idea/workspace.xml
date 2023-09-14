@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85faad7b-d31d-473a-8564-1e5e161681e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/CheckOutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/checkOutPageSD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/Seach and Add product to the Cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Seach and Add product to the Cart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/PageObjectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/mainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObject/mainPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/checkOutPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/mainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/mainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/Login and Signup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Login and Signup.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/CheckOutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/CheckOutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/PageObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/mainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/mainPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage_StepDefination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/textContextMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/textContextMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Driver/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Driver/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +57,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rmnai/eclipse-workspace/DemoTest&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Rmnai/OneDrive/Desktop/SoftwareTesting",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "copyright"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Rmnai\eclipse-workspace\DemoTest" />
@@ -86,7 +87,7 @@
       <recent name="StepDefinations" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="JUnit.Runner (1)">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jre1.8.0_341" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -129,6 +130,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoTest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -144,10 +160,12 @@
     <list>
       <item itemvalue="Cucumber Java.Scenario: Search for the Product" />
       <item itemvalue="Cucumber Java.Feature: Login" />
+      <item itemvalue="JUnit.Runner (1)" />
       <item itemvalue="JUnit.Runner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner (1)" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: Search for the Product" />
         <item itemvalue="Cucumber Java.Feature: Login" />
