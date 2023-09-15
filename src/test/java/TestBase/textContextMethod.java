@@ -2,6 +2,8 @@ package TestBase;
 
 import PageObject.PageObjectManager;
 
+import java.io.IOException;
+
 public class textContextMethod {
 
     public TestBase testbase;
@@ -9,7 +11,7 @@ public class textContextMethod {
 
     public PageObjectManager pageobjectmanager;
 
-    public textContextMethod() {
+    public textContextMethod() throws IOException {
         testbase = new TestBase();
         pageobjectmanager = new PageObjectManager(testbase.WebDriverManager());
 

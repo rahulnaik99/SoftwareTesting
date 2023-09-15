@@ -22,14 +22,14 @@ public class LoginPageObject {
     By signupSubmit = By.cssSelector("button[class='action submit primary']");
     By signIn = By.xpath("/html/body/div[2]/header/div[1]/div/ul/li[2]/a");
     By Welcome = By.cssSelector("span[class$='logged-in'");
-    By SignupSuc = By.xpath("//*[@id=\"maincontent\"]/div[1]/div[2]/div/div/div");
+    By SignupSuc = By.xpath("//div[text()='Thank you for registering with Main Website Store.']");
     public WebDriver driver;
     public LoginPageObject(WebDriver driver) {
         this.driver=driver;
     }
 
     public boolean login(String EmailLog) throws InterruptedException {
-        driver.get("https://abstracta.us/blog/software-testing/best-demo-websites-for-practicing-different-types-of-software-tests/");
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(signIn).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -51,8 +51,9 @@ public class LoginPageObject {
         driver.findElement(passwordconfo).sendKeys("Charle@234#");
         driver.findElement(signupSubmit).click();
         Thread.sleep(10000);
-        String Expected = driver.findElement(SignupSuc).getAttribute("innerHTML");
-        Assert.assertEquals(Expected, "Thank you for registering with Fake Online Clothing Store.");
+        String Expected = driver.findElement(SignupSuc).getText();
+        System.out.println(Expected);
+        Assert.assertEquals(Expected, "Thank you for registering with Main Website Store.");
         driver.findElement(ActionSwitch).click();
         driver.findElement(Signout).click();
     }
