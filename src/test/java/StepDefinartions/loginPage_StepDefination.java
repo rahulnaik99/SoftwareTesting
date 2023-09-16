@@ -1,25 +1,32 @@
 package StepDefinartions;
 
+import Hooks.Hooks;
 import PageObject.LoginPageObject;
 import TestBase.textContextMethod;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.After;
 import org.openqa.selenium.WebDriver;
+
+import java.io.IOException;
 
 
 public class loginPage_StepDefination {
     WebDriver driver;
     textContextMethod tcm;
     LoginPageObject login;
-    public loginPage_StepDefination(textContextMethod tcm){
+    Hooks hooks;
+    public loginPage_StepDefination(textContextMethod tcm) {
         this.tcm=tcm;
-        this.login=tcm.pageobjectmanager.getLoginPage();
 
     }
-
+    @After
+    public void AfterScenario() throws IOException {
+        tcm.testbase.WebDriverManager().quit();
+    }
     @When("User Signup to the Website using {string}")
     public void userSignupToTheWebsiteUsing(String arg0) throws InterruptedException {
-        login.signup(arg0);
+        tcm.pageobjectmanager.getLoginPage().signup(arg0);
     }
 
     @Then("Validate the Signup By Sign-in using {string}")

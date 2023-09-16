@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85faad7b-d31d-473a-8564-1e5e161681e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Hooks/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/PageObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/common/global.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Features/Login and Signup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Login and Signup.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage_StepDefination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage_StepDefination.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/textContextMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/textContextMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Driver/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Driver/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +74,8 @@
       <recent name="C:\Users\Rmnai\eclipse-workspace\DemoTest\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rmnai\OneDrive\Desktop\SoftwareTesting\src\main\resources\common" />
+      <recent name="C:\Users\Rmnai\OneDrive\Desktop\SoftwareTesting\src\main\resources" />
       <recent name="C:\Users\Rmnai\eclipse-workspace\DemoTest\src\test\resources\Driver" />
       <recent name="C:\Users\Rmnai\eclipse-workspace\DemoTest\src\test\java\Features" />
       <recent name="C:\Users\Rmnai\eclipse-workspace\DemoTest\src\test\java" />
@@ -122,7 +131,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.Runner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareTesting" />
       <extension name="coverage">
         <pattern>
@@ -130,17 +151,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestRunner" />
-      <option name="MAIN_CLASS_NAME" value="TestRunner.Runner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DemoTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="18" />
       <option name="PACKAGE_NAME" value="TestRunner" />
       <option name="MAIN_CLASS_NAME" value="TestRunner.Runner" />
       <option name="METHOD_NAME" value="" />

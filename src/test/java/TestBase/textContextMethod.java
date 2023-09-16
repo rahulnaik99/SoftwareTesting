@@ -8,7 +8,6 @@ public class textContextMethod {
 
     public TestBase testbase;
 
-
     public PageObjectManager pageobjectmanager;
 
     public textContextMethod() throws IOException {
