@@ -5,7 +5,6 @@ import PageObject.LoginPageObject;
 import TestBase.textContextMethod;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.After;
 import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
@@ -20,12 +19,8 @@ public class loginPage_StepDefination {
         this.tcm=tcm;
 
     }
-    @After
-    public void AfterScenario() throws IOException {
-        tcm.testbase.WebDriverManager().quit();
-    }
     @When("User Signup to the Website using {string}")
-    public void userSignupToTheWebsiteUsing(String arg0) throws InterruptedException {
+    public void userSignupToTheWebsiteUsing(String arg0) throws InterruptedException, IOException {
         tcm.pageobjectmanager.getLoginPage().signup(arg0);
     }
 

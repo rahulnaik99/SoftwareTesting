@@ -1,11 +1,14 @@
 package PageObject;
 
 
+import CommonMethods.CommonMethodManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Random;
 
 public class LoginPageObject {
     By email = By.cssSelector("input[id='email']");
@@ -24,12 +27,13 @@ public class LoginPageObject {
     By Welcome = By.cssSelector("span[class$='logged-in'");
     By SignupSuc = By.xpath("//div[text()='Thank you for registering with Main Website Store.']");
     public WebDriver driver;
+    public CommonMethodManager CommonMethods;
     public LoginPageObject(WebDriver driver) {
-        this.driver=driver;
+      this.driver=driver;
+      this.CommonMethods=new CommonMethodManager(driver);
     }
 
     public boolean login(String EmailLog) throws InterruptedException {
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(signIn).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -41,19 +45,24 @@ public class LoginPageObject {
         Assert.assertEquals(Expected, "Welcome, Rahul Naik!");
         return false;
     }
-    public void signup(String EmailAdd) throws InterruptedException {
+    public void signup(String EmailAdd) throws InterruptedException, IOException {
+
+
+        Random ran = new Random();
+
+        String email = ran.nextLong()+"@mail.com";
         driver.findElement(SignUp).click();
         Thread.sleep(3000);
         driver.findElement(fname).sendKeys("Rahul");
         driver.findElement(lname).sendKeys("Naik");
-        driver.findElement(signupEmail).sendKeys(EmailAdd);
+        driver.findElement(signupEmail).sendKeys(email);
         driver.findElement(password).sendKeys("Charle@234#");
         driver.findElement(passwordconfo).sendKeys("Charle@234#");
         driver.findElement(signupSubmit).click();
         Thread.sleep(10000);
         String Expected = driver.findElement(SignupSuc).getText();
-        System.out.println(Expected);
         Assert.assertEquals(Expected, "Thank you for registering with Main Website Store.");
+        CommonMethods.getTestEvidence().ppt("SignedUp Successfully");
         driver.findElement(ActionSwitch).click();
         driver.findElement(Signout).click();
     }

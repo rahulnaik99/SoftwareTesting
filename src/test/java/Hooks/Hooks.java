@@ -21,6 +21,7 @@ public class Hooks {
         Properties config = new Properties();
         config.load(file);
         tcm.testbase.WebDriverManager().get(config.getProperty("URL"));
+        tcm.commonMethodManager.getTestEvidence().ppt("HomePage");
 
     }
     @After
