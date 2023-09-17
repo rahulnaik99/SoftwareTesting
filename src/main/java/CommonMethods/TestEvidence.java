@@ -62,7 +62,7 @@ public class TestEvidence {
 //                FileUtils.forceDelete(new File("screenshot.png"));
 
                 // Save the PowerPoint presentation
-                FileOutputStream out = new FileOutputStream(System.getProperty("user.dir")+"/src/main/TestEvidences/PowerPoint/TestEvidence.ppt");
+                FileOutputStream out = new FileOutputStream(System.getProperty("user.dir")+"/src/TestEvidences/PowerPoint/TestEvidence.ppt");
                 ppt.write(out);
                 out.close();
             }

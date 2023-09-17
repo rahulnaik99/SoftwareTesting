@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85faad7b-d31d-473a-8564-1e5e161681e3" name="Changes" comment="" />
+    <list default="true" id="85faad7b-d31d-473a-8564-1e5e161681e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/TestEvidences/HTML/cucumber.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestEvidences/Json/cucumber.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner/JUnitRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestNGRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TestEvidences/HTML/cucumber.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TestEvidences/Json/cucumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TestEvidences/PowerPoint/TestEvidence.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestEvidences/PowerPoint/TestEvidence.ppt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/TestEvidences/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestEvidences/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommonMethods/TestEvidence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonMethods/TestEvidence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/mainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/mainPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/Runner.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +92,7 @@
       <recent name="StepDefinations" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner (1)">
+  <component name="RunManager" selected="TestNG.TestNGRunner">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jre1.8.0_341" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -162,14 +178,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestNGRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareTesting" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.TestNGRunner" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: Search for the Product" />
       <item itemvalue="Cucumber Java.Feature: Login" />
       <item itemvalue="JUnit.Runner (1)" />
       <item itemvalue="JUnit.Runner" />
+      <item itemvalue="TestNG.TestNGRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNGRunner" />
         <item itemvalue="JUnit.Runner (1)" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: Search for the Product" />
