@@ -12,4 +12,9 @@ public class CommonMethodManager {
        TestEvidence testEvidence = new TestEvidence(driver);
        return testEvidence;
    }
+   public SeleniumMethods SeleniumMethods(){
+        SeleniumMethods SeleniumMethods = new SeleniumMethods(driver);
+        return SeleniumMethods;
+   }
+
 }

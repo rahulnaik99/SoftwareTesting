@@ -2,17 +2,17 @@ package StepDefinartions;
 
 import PageObject.mainPageObject;
 import PageObject.PageObjectManager;
-import TestBase.textContextMethod;
+import TestBase.Base;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
 public class mainPage {
-    textContextMethod tcm;
+    Base tcm;
     WebDriver driver;
     PageObjectManager pageobjectmanager;
 
-    public mainPage(textContextMethod tcm){
+    public mainPage(Base tcm){
         this.tcm= tcm;
     }
     @When("User Search for {string} and Select")

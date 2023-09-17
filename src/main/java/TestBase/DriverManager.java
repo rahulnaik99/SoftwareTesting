@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.IOException;
 
-public class TestBase {
+public class DriverManager {
     WebDriver driver;
 
     public WebDriver WebDriverManager() throws IOException {

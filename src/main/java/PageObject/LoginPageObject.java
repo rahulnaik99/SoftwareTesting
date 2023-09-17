@@ -2,15 +2,15 @@ package PageObject;
 
 
 import CommonMethods.CommonMethodManager;
-//import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Random;
 
 public class LoginPageObject {
+
     By email = By.cssSelector("input[id='email']");
     By passWord = By.cssSelector("input[type='password']");
     By submit = By.cssSelector("button[name='send']");
@@ -34,12 +34,12 @@ public class LoginPageObject {
     }
 
     public boolean login(String EmailLog) throws InterruptedException {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.findElement(signIn).click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.findElement(email).sendKeys(EmailLog);
-        driver.findElement(passWord).sendKeys("Charle@234#");
-        driver.findElement(submit).click();
+
+        CommonMethods.SeleniumMethods().click(signIn);
+        CommonMethods.SeleniumMethods().EnterValue(email,EmailLog);
+        CommonMethods.SeleniumMethods().EnterValue(passWord,"Charle@234#");
+        CommonMethods.SeleniumMethods().click(submit);
+
         Thread.sleep(3000);
         String Expected = driver.findElement(Welcome).getAttribute("innerHTML");
 //        Assert.assertEquals(Expected, "Welcome, Rahul Naik!");
@@ -51,19 +51,21 @@ public class LoginPageObject {
         Random ran = new Random();
 
         String email = ran.nextLong()+"@mail.com";
-        driver.findElement(SignUp).click();
+        CommonMethods.SeleniumMethods().click(SignUp);
+
         Thread.sleep(3000);
-        driver.findElement(fname).sendKeys("Rahul");
-        driver.findElement(lname).sendKeys("Naik");
-        driver.findElement(signupEmail).sendKeys(email);
-        driver.findElement(password).sendKeys("Charle@234#");
-        driver.findElement(passwordconfo).sendKeys("Charle@234#");
-        driver.findElement(signupSubmit).click();
-        Thread.sleep(10000);
-        String Expected = driver.findElement(SignupSuc).getText();
-//        Assert.assertEquals(Expected, "Thank you for registering with Main Website Store.");
-        CommonMethods.getTestEvidence().ppt("SignedUp Successfully");
-        driver.findElement(ActionSwitch).click();
-        driver.findElement(Signout).click();
+        
+       CommonMethods.SeleniumMethods().EnterValue(fname,"Rahul");
+       CommonMethods.SeleniumMethods().EnterValue(lname,"Naik");
+       CommonMethods.SeleniumMethods().EnterValue(signupEmail,email);
+       CommonMethods.SeleniumMethods().EnterValue(passWord,"Charle@234#");
+       CommonMethods.SeleniumMethods().EnterValue(passwordconfo,"Charle@234#");
+       CommonMethods.SeleniumMethods().click(signupSubmit);
+       String Expected = driver.findElement(SignupSuc).getText();
+       Assert.assertEquals("Thank you for registering with Main Website Store.", Expected, "Assertion failed: Actual value is not equal to expected value");
+       CommonMethods.getTestEvidence().ppt("SignedUp Successfully");
+       CommonMethods.SeleniumMethods().click(ActionSwitch);
+       CommonMethods.SeleniumMethods().click(Signout);
+
     }
 }

@@ -6,14 +6,14 @@ import PageObject.PageObjectManager;
 
 import java.io.IOException;
 
-public class textContextMethod {
+public class Base {
 
-    public TestBase testbase;
+    public DriverManager testbase;
     public TestEvidence Evidence;
     public PageObjectManager pageobjectmanager;
     public CommonMethodManager commonMethodManager;
-    public textContextMethod() throws IOException {
-        testbase = new TestBase();
+    public Base() throws IOException {
+        testbase = new DriverManager();
         pageobjectmanager = new PageObjectManager(testbase.WebDriverManager());
         commonMethodManager = new CommonMethodManager(testbase.WebDriverManager());
 

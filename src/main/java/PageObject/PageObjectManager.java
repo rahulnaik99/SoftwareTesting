@@ -1,6 +1,5 @@
 package PageObject;
 
-import TestBase.textContextMethod;
 import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
