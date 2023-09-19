@@ -4,6 +4,8 @@ import CommonMethods.CommonMethodManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.io.IOException;
+
 public class mainPageObject {
     WebDriver driver;
     CommonMethodManager CommonMethodManager;
@@ -25,17 +27,19 @@ public class mainPageObject {
     By colorOrange=By.cssSelector("div[id='option-label-color-93-item-56']");
     By colorPurple = By.cssSelector("div[id='option-label-color-93-item-57']");
     By Qunat = By.cssSelector("input[type$='number']");
-    By addToCart = By.cssSelector("button[id$='product-addtocart-button']");
+    By addToCart = By.cssSelector("a[class='action showcart']");
+    By proceed2Checkout = By.cssSelector("button[id='top-cart-btn-checkout']");
     By sucessMessage = By.cssSelector("div[class='message-success success message']");
     By searchAction = By.cssSelector("button[class$='action search']");
 
-    public void SearchProduct(String Keyword)
-    {
+    public void SearchProduct(String Keyword) throws IOException {
         CommonMethodManager.SeleniumMethods().EnterValue(SearchBox,Keyword);
+        CommonMethodManager.getTestEvidence().highlightElement(SearchBox);
         CommonMethodManager.SeleniumMethods().click(SearchButton);
+        CommonMethodManager.getTestEvidence().ppt("The Searched Product apeared in the Search Result");
     }
 
-    public void chooseTheSizeColorQuantity(String Size, String Colour, String Qunatity) throws InterruptedException {
+    public void chooseTheSizeColorQuantity(String Size, String Colour, String Qunatity) throws InterruptedException, IOException {
         Thread.sleep(5000);
         switch (Size){
             case "XS":
@@ -71,10 +75,13 @@ public class mainPageObject {
                 driver.findElement(colorPurple).click();
                 break;
         }
+        CommonMethodManager.getTestEvidence().ppt("Selected the product to buy");
 //        driver.findElement(Qunat).sendKeys(Qunatity);
         driver.findElement(addToCart).click();
-        Thread.sleep(5000);
-        String Actual = driver.findElement(sucessMessage).getText();
+        CommonMethodManager.SeleniumMethods().click(proceed2Checkout);
+
+//        Thread.sleep(5000);
+//        String Actual = driver.findElement(sucessMessage).getText();
 //        Assert.assertEquals(Actual,"You added Radiant Tee to your shopping cart.");
     }
 }

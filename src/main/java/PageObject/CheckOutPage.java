@@ -3,10 +3,14 @@ package PageObject;
 import CommonMethods.CommonMethodManager;
 import lombok.SneakyThrows;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class CheckOutPage {
@@ -36,8 +40,6 @@ public class CheckOutPage {
     @SneakyThrows
     public void Checkout(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.findElement(Cart).click();
-        driver.findElement(ProcedToCheckout).click();
         driver.findElement(email).sendKeys("hehe@hoho.com");
         commonMethodManager.SeleniumMethods().Elements(By.xpath("//*[@id=\"login-email\"]"),1);
         driver.findElement(firstName).sendKeys("Rahul");
@@ -60,6 +62,40 @@ public class CheckOutPage {
         {
 
         }
+
+
+
+    }
+
+    public void alreadyLoggedinCheckout() throws IOException {
+        By Company  = By.cssSelector("input[name='company']");
+        By AddressLine01 = By.cssSelector("input[name='street[0]']");
+        By City = By.cssSelector("input[name='city']");
+        By State = By.cssSelector("Select[name='region_id']");
+        By Zip = By.cssSelector("input[name='postcode']");
+        By Country = By.cssSelector("Select[name='country_id']");
+        By PhoneNumber = By.cssSelector("input[name='telephone']");
+        By BestWayShipping = By.cssSelector("input[name='ko_unique_1']");
+        By NextButton = By.cssSelector("button[class='button action continue primary']");
+        commonMethodManager.SeleniumMethods().EnterValue(Company,"TATA");
+        commonMethodManager.SeleniumMethods().EnterValue(AddressLine01,"123  street");
+        commonMethodManager.SeleniumMethods().EnterValue(City,"NewYork");
+        commonMethodManager.SeleniumMethods().dropDown(State,"Ohio");
+        commonMethodManager.SeleniumMethods().EnterValue(Zip,"50066");
+        commonMethodManager.SeleniumMethods().dropDown(Country,"United States");
+        commonMethodManager.SeleniumMethods().EnterValue(PhoneNumber,"+919658745214");
+        commonMethodManager.SeleniumMethods().click(BestWayShipping);
+        commonMethodManager.getTestEvidence().ppt("Shippping deatails filled");
+        commonMethodManager.SeleniumMethods().click(NextButton);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+
+        commonMethodManager.getTestEvidence().highlightElement(By.xpath("(//li/span)[2]"));
+        commonMethodManager.getTestEvidence().ppt("Comepleted");
+
+
+
+
 
 
 

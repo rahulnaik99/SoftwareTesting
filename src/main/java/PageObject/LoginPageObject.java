@@ -33,16 +33,18 @@ public class LoginPageObject {
       this.CommonMethods=new CommonMethodManager(driver);
     }
 
-    public boolean login(String EmailLog) throws InterruptedException {
+    public boolean login(String EmailLog) throws InterruptedException, IOException {
 
         CommonMethods.SeleniumMethods().click(signIn);
         CommonMethods.SeleniumMethods().EnterValue(email,EmailLog);
+        CommonMethods.getTestEvidence().highlightElement(email);
         CommonMethods.SeleniumMethods().EnterValue(passWord,"Charle@234#");
+        CommonMethods.getTestEvidence().highlightElement(passWord);
+        CommonMethods.getTestEvidence().ppt("Login Page : Credentials Filled");
         CommonMethods.SeleniumMethods().click(submit);
 
         Thread.sleep(3000);
         String Expected = driver.findElement(Welcome).getAttribute("innerHTML");
-//        Assert.assertEquals(Expected, "Welcome, Rahul Naik!");
         return false;
     }
     public void signup(String EmailAdd) throws InterruptedException, IOException {

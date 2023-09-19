@@ -25,7 +25,7 @@ public class loginPage_StepDefination {
     }
 
     @Then("Validate the Signup By Sign-in using {string}")
-    public void validateTheSignupBySignInUsing(String arg0) throws InterruptedException {
+    public void validateTheSignupBySignInUsing(String arg0) throws InterruptedException, IOException {
         login.login(arg0);
     }
 

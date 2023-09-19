@@ -1,7 +1,6 @@
 package Hooks;
 
 import TestBase.Base;
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 import java.io.FileInputStream;
@@ -26,8 +25,8 @@ public class Hooks {
         Base.commonMethodManager.getTestEvidence().ppt("HomePage");
 
     }
-    @After
-    public void AfterScenario() throws IOException {
-    Base.testbase.WebDriverManager().quit();
-    }
+//    @After
+//    public void AfterScenario() throws IOException {
+//    Base.testbase.WebDriverManager().quit();
+//    }
 }

@@ -3,6 +3,7 @@ package CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -25,5 +26,10 @@ public class SeleniumMethods {
         List<WebElement> Elements = driver.findElements(By.cssSelector("input[class='input-text']"));
         System.out.println(Elements.get(1));
 
+    }
+    public void dropDown(By Element,String value){
+        WebElement dropDown = driver.findElement(Element);
+        Select select = new Select(dropDown);
+        select.selectByVisibleText(value);
     }
 }

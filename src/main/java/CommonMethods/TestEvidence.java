@@ -2,11 +2,10 @@ package CommonMethods;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xslf.usermodel.*;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 
 import java.awt.*;
+import java.awt.Rectangle;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -66,5 +65,18 @@ public class TestEvidence {
                 ppt.write(out);
                 out.close();
             }
+            public void highlightElement(By Element){
+                WebElement WElement = driver.findElement(Element);
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                js.executeScript("arguments[0].style.border='4px solid yellow'", WElement);
 
-}
+            }
+             public void unhighlightElement(By Element) {
+                 WebElement WElement = driver.findElement(Element);
+                 JavascriptExecutor js = (JavascriptExecutor) driver;
+                 js.executeScript("arguments[0].style.border=' '", WElement);
+             }
+
+    }
+
+

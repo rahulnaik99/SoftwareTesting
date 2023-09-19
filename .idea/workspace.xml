@@ -11,13 +11,14 @@
       <change beforePath="$PROJECT_DIR$/src/TestEvidences/HTML/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestEvidences/HTML/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestEvidences/PowerPoint/TestEvidence.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestEvidences/PowerPoint/TestEvidence.ppt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CommonMethods/SeleniumMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonMethods/SeleniumMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CommonMethods/TestEvidence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommonMethods/TestEvidence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/CheckOutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/CheckOutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/PageObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/LoginPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/mainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/mainPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hooks/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/checkOutPageSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/checkOutPageSD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage_StepDefination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/loginPage_StepDefination.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinartions/mainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinartions/mainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestNGRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestNGRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Seach and Add product to the Cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Seach and Add product to the Cart.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,6 +156,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Runner" />
       <item itemvalue="TestNG.SeleniumMethods.EnterValue" />
       <item itemvalue="TestNG.TestNGRunner" />
     </list>
@@ -195,7 +197,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/CommonMethods/SeleniumMethods.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
