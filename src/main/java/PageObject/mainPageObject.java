@@ -1,17 +1,20 @@
 package PageObject;
 
-import lombok.SneakyThrows;
-//import org.junit.Assert;
+import CommonMethods.CommonMethodManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class mainPageObject {
     WebDriver driver;
+    CommonMethodManager CommonMethodManager;
     public mainPageObject(WebDriver driver){
+
         this.driver=driver;
+        this.CommonMethodManager=new CommonMethodManager(driver);
     }
 
     By SearchBox = By.cssSelector("input[id$='search']");
+    By SearchButton = By.cssSelector("button[class='action search']");
     By Product = By.cssSelector("img[class='product-image-photo']");
     By sizeXS =By.cssSelector("div[id='option-label-size-143-item-166']");
     By sizeS =By.cssSelector("div[id='option-label-size-143-item-167']");
@@ -25,17 +28,14 @@ public class mainPageObject {
     By addToCart = By.cssSelector("button[id$='product-addtocart-button']");
     By sucessMessage = By.cssSelector("div[class='message-success success message']");
     By searchAction = By.cssSelector("button[class$='action search']");
-    @SneakyThrows
+
     public void SearchProduct(String Keyword)
     {
-        driver.findElement(SearchBox).sendKeys(Keyword);
-        Thread.sleep(2000);
-        //driver.findElement(searchAction).click();
-        Thread.sleep(6000);
-        driver.findElement(Product).click();
+        CommonMethodManager.SeleniumMethods().EnterValue(SearchBox,Keyword);
+        CommonMethodManager.SeleniumMethods().click(SearchButton);
     }
-    @SneakyThrows
-    public void chooseTheSizeColorQuantity(String Size, String Colour, String Qunatity){
+
+    public void chooseTheSizeColorQuantity(String Size, String Colour, String Qunatity) throws InterruptedException {
         Thread.sleep(5000);
         switch (Size){
             case "XS":
@@ -71,7 +71,7 @@ public class mainPageObject {
                 driver.findElement(colorPurple).click();
                 break;
         }
-        driver.findElement(Qunat).sendKeys(Qunatity);
+//        driver.findElement(Qunat).sendKeys(Qunatity);
         driver.findElement(addToCart).click();
         Thread.sleep(5000);
         String Actual = driver.findElement(sucessMessage).getText();

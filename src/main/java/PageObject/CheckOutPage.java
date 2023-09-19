@@ -1,16 +1,24 @@
 package PageObject;
 
+import CommonMethods.CommonMethodManager;
 import lombok.SneakyThrows;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.concurrent.TimeUnit;
+
 public class CheckOutPage {
     WebDriver driver;
+    CommonMethodManager commonMethodManager;
+    public CheckOutPage(WebDriver driver){
+        this.driver=driver;
+        this.commonMethodManager=new CommonMethodManager(driver);
+    }
     By Cart = By.cssSelector("a[class='action showcart']");
-    By openCart = By.cssSelector("button[id='top-cart-btn-checkout']");
-    By email = By.cssSelector("input[id='customer-email']");
+    By ProcedToCheckout = By.cssSelector("button[class='top-cart-btn-checkout']");
+    By email = By.cssSelector("//*[@id=\"login-email\"]");
     By firstName = By.cssSelector("input[type='text']");
     By lastName = By.cssSelector("input[name='lastname']");
     By address = By.cssSelector("input[name$='street[0]']");
@@ -23,16 +31,15 @@ public class CheckOutPage {
     By checkoutSubmit = By.cssSelector("button[class='button action continue primary']");
     By placeOrder = By.cssSelector("button[class='action primary checkout']");
 
-    public CheckOutPage(WebDriver driver) {
-        this.driver=driver;
-    }
+
 
     @SneakyThrows
     public void Checkout(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(Cart).click();
-        driver.findElement(openCart).click();
-        Thread.sleep(10000);
+        driver.findElement(ProcedToCheckout).click();
         driver.findElement(email).sendKeys("hehe@hoho.com");
+        commonMethodManager.SeleniumMethods().Elements(By.xpath("//*[@id=\"login-email\"]"),1);
         driver.findElement(firstName).sendKeys("Rahul");
         driver.findElement(lastName).sendKeys("naik");
         driver.findElement(address).sendKeys("123 Street");

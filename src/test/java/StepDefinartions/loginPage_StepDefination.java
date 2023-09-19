@@ -30,8 +30,8 @@ public class loginPage_StepDefination {
     }
 
     @When("User Login using {string}")
-    public void userLoginUsing(String arg0) throws InterruptedException {
-        login.login(arg0);
+    public void userLoginUsing(String arg0) throws InterruptedException, IOException {
+      Base.pageobjectmanager.getLoginPage().login(arg0);
     }
 
 
